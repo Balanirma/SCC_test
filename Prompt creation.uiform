@@ -1,0 +1,103 @@
+﻿{
+  "Metadata": {
+    "Id": "fb992615-13b2-4c2e-b1cd-c0e58b8af045",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "Prompt creation",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "Sender  name",
+        "tableView": true,
+        "key": "senderName",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Receiver name",
+        "tableView": true,
+        "key": "receiverName",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Email Subject",
+        "showCharCount": true,
+        "tableView": true,
+        "key": "emailSubject",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "content": "Example : Requesting for business leads",
+        "key": "label1",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "Email purpose",
+        "showCharCount": true,
+        "tableView": true,
+        "key": "emailPurpose",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "content": "Example: Write a mail to client for get business leads",
+        "key": "label",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "Email Tone",
+        "widget": "choicesjs",
+        "tableView": true,
+        "data": {
+          "values": [
+            {
+              "label": "Formal",
+              "value": "formal"
+            },
+            {
+              "label": "Casual",
+              "value": "casual"
+            },
+            {
+              "label": "Friendly",
+              "value": "friendly"
+            },
+            {
+              "label": "Humorous",
+              "value": "humorous"
+            },
+            {
+              "label": "Respectful",
+              "value": "respectful"
+            }
+          ]
+        },
+        "key": "emailTone1",
+        "type": "select",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}
